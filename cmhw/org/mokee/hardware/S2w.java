@@ -14,18 +14,18 @@
  * limitations under the License.
  */
 
-package org.cyanogenmod.hardware;
+package org.mokee.hardware;
 
-import org.cyanogenmod.hardware.util.FileUtils;
+import org.mokee.hardware.util.FileUtils;
 
 import java.io.File;
 
 /**
  * Color enhancement support
  */
-public class Dt2w {
+public class S2w {
 
-    private static String FILE_DT = "sys/bus/i2c/drivers/atmel_mxt_ts/3-004b/dt2w_enabled";
+    private static String FILE_2W = "/sys/bus/i2c/drivers/atmel_mxt_ts/3-004b/s2w_enabled";
 
     /**
      * Whether device supports an color enhancement technology.
@@ -33,7 +33,7 @@ public class Dt2w {
      * @return boolean Supported devices must return always true
      */
     public static boolean isSupported() {
-        return new File(FILE_DT).exists();
+        return new File(FILE_2W).exists();
     }
 
     /**
@@ -43,7 +43,7 @@ public class Dt2w {
      * the operation failed while reading the status; true in any other case.
      */
     public static boolean isEnabled() {
-        return Integer.parseInt(FileUtils.readOneLine(FILE_DT)) == 1;
+        return Integer.parseInt(FileUtils.readOneLine(FILE_2W)) == 1;
     }
 
     /**
@@ -55,9 +55,9 @@ public class Dt2w {
      */
     public static boolean setEnabled(boolean status) {
         if (status == true) {
-            return FileUtils.writeLine(FILE_DT, "1");
+            return FileUtils.writeLine(FILE_2W, "1");
         } else {
-            return FileUtils.writeLine(FILE_DT, "0");
+            return FileUtils.writeLine(FILE_2W, "0");
         }
     }
 
