@@ -1320,7 +1320,7 @@ SectionDevice
 		'LINEOUT2 Volume':1:100
 		'LINEOUT4 Volume':1:100
 		'EAR PA Gain':0:POS_6_DB
-		'RX1 Digital Volume':1:73
+		'RX1 Digital Volume':1:78
 		'RX5 Digital Volume':1:68
 		'DEC2 MUX':0:ADC5
 		'DEC2 Volume':1:68
@@ -1461,8 +1461,8 @@ SectionDevice
 		'RX4 DSM MUX':0:DSM_INV
 		'RX3 Digital Volume':1:68
 		'RX4 Digital Volume':1:68
-		'LINEOUT1 Volume':1:66
-		'LINEOUT3 Volume':1:66
+		'LINEOUT1 Volume':1:74
+		'LINEOUT3 Volume':1:74
 		'SLIM TX3 MUX':0:RMIX3
 		'SLIM TX5 MUX':0:RMIX5
 	EndSequence
@@ -1500,8 +1500,8 @@ SectionDevice
 		'LINEOUT3 Volume':1:100
 		'LINEOUT2 Volume':1:100
 		'LINEOUT4 Volume':1:100
-		'RX3 Digital Volume':1:77
-		'RX4 Digital Volume':1:77
+		'RX3 Digital Volume':1:82
+		'RX4 Digital Volume':1:82
 		'DEC2 MUX':0:ADC5
 		'DEC2 Volume':1:68
 		'ADC5 Volume':1:0
